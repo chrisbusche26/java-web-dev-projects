@@ -4,13 +4,23 @@ public class MenuItem {
     private double price;
     private String description;
     private String category;
-    private boolean isNew;
+    public boolean isNew;
 
     public MenuItem(double price, String description, String category, boolean isNew) {
         this.price = price;
         this.description = description;
         this.category = category;
         this.isNew = isNew;
+    }
+
+    @Override
+    public String toString() {
+        return "MenuItem{" +
+                "price=" + price +
+                ", description='" + description + '\'' +
+                ", category='" + category + '\'' +
+                ", isNew=" + isNew +
+                '}';
     }
 
     public double getPrice() {
